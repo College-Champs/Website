@@ -7,4 +7,4 @@ app.get("/", (req, res) => {
     res.send("Hello, World!");
 });
 
-app.listen(3030, () => console.log("Listening on port 3030"));
+app.listen(process.env.PORT || 3030, () => console.log("Listening on port 3030"));
